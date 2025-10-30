@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Custom Fonts */
+  --font-roboto: "Roboto", system-ui, sans-serif;
+
+  /* Custom Font Sizes */
+  --font-size-h1: 20px;
+  --font-size-h2: 18px;
+  --font-size-body: 16px;
+  --font-size-caption: 12px;
+
+  /* Custom Colors - Main */
+  --color-custom-main: #0c0d0d;
+
+  /* Custom Colors - Grey */
+  --color-custom-grey-100: #f7f8fa;
+  --color-custom-grey-200: #e1e3e5;
+  --color-custom-grey-400: #cfcfcf;
+  --color-custom-grey-500: #8d9196;
+  --color-custom-grey-600: #787b80;
+
+  /* Custom Colors - Red */
+  --color-custom-red-100: #ffe9e9;
+  --color-custom-red-300: #ff5252;
+  --color-custom-red-400: #f90000;
+
+  /* Custom Colors - Yellow */
+  --color-custom-yellow-100: #fef3c7;
+  --color-custom-yellow-400: #ffbe3f;
+  --color-custom-yellow-500: #eab308;
+
+  /* Custom Colors - Green */
+  --color-custom-green-100: #f1ffe5;
+  --color-custom-green-300: #68bd27;
+  --color-custom-green-400: #58e766;
+
+  /* Custom Colors - Blue */
+  --color-custom-blue-100: #e0f2fe;
+  --color-custom-blue-400: #3faeff;
+  --color-custom-blue-500: #2b87e3;
+  --color-custom-blue-900: #062a4f;
+
+  /* Custom Colors - Purple */
+  --color-custom-purple-100: #f3e8ff;
+  --color-custom-purple-600: #9333ea;
+}
+
+:root {
+  font-family: "Roboto", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #0c0d0d; /* Main font color from design */
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root:has(.no-doc-scroll) {
+  overflow: hidden;
+}
+
+/* Custom Typography Classes */
+.text-h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.text-h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text-body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text-caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Custom text color utilities using design system */
+.text-main {
+  color: #0c0d0d;
+}
+
+.text-secondary {
+  color: #8d9196; /* grey-500 */
+}
+
+.text-muted {
+  color: #787b80; /* grey-600 */
+}
+
+/* Custom placeholder styling */
+.text-field-placeholder::placeholder {
+  color: #0c0d0d; /* custom-grey-500 */
+  font-size: 16px; /* text-body */
+  font-weight: 400;
+  line-height: 1.5;
+}
